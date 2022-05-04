@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@color/beige_transparent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@color/beige_transparent"
+                    android:foregroundGravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_twotone_edit_24" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:cardCornerRadius="75dp">
+
+                <ImageView
+                    android:id="@+id/userprofilePicture"
+                    android:layout_width="150sp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="150sp" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:minWidth="300sp">
+            <LinearLayout
+                android:id="@+id/user_names_section"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/firstNameLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_first_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp"
+                        android:text="First Name"/>
+
+                    <TextView
+                        android:id="@+id/user_first_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:minWidth="145dp"
+                        android:textColor="@color/darker_grey"
+                        android:fontFamily="sans-serif-black"/>
+                    <View
+                        android:layout_width="150sp"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/setting_words_id"
+                        android:background="@color/light_grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/lastNameLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_last_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp"
+                        android:text="Last Name"/>
+
+                    <TextView
+                        android:id="@+id/user_last_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:minWidth="145dp"
+                        android:textColor="@color/darker_grey"
+                        android:fontFamily="sans-serif-black"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/setting_words_id"
+                        android:background="@color/light_grey"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/emailLayout"
+                android:layout_below="@+id/user_names_section"
+                android:layout_height="50dp"
+                android:minWidth="300sp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_email_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_grey"
+                    android:textSize="12sp"
+                    android:text="Email"/>
+
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:minWidth="145dp"
+                    android:textColor="@color/darker_grey"
+                    android:fontFamily="sans-serif-black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/setting_words_id"
+                    android:background="@color/light_grey"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/phoneLayout"
+                android:layout_below="@+id/emailLayout"
+                android:layout_height="50dp"
+                android:minWidth="300sp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_phone_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_grey"
+                    android:textSize="12sp"
+                    android:text="Phone"/>
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:minWidth="145dp"
+                    android:textColor="@color/darker_grey"
+                    android:fontFamily="sans-serif-black"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/setting_words_id"
+                    android:background="@color/light_grey"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/user_location_section"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/phoneLayout"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/countryLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_country_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp"
+                        android:text="Country"/>
+
+                    <TextView
+                        android:id="@+id/user_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:minWidth="145dp"
+                        android:textColor="@color/darker_grey"
+                        android:fontFamily="sans-serif-black"/>
+                    <View
+                        android:layout_width="150sp"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/setting_words_id"
+                        android:background="@color/light_grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/cityLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_city_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp"
+                        android:text="City/District"/>
+
+                    <TextView
+                        android:id="@+id/user_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:minWidth="145dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/darker_grey"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/setting_words_id"
+                        android:background="@color/light_grey"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

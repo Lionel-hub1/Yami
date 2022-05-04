@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="50sp"
+        android:text="Posts Page" />
+
+</FrameLayout>

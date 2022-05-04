@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@color/beige_transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="32dp"
+            android:background="@color/white"
+            android:id="@+id/btnClose"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_height="32dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="75dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/transparent_grey">
+
+            <ImageView
+                android:id="@+id/usrImage"
+                android:layout_width="150dp"
+                android:src="@drawable/ic_baseline_person_outline_24"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_person_grey"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/darker_beige"
+            android:hint="First Name"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/usrFirstName"
+            android:inputType="textPersonName"
+            android:background="@drawable/rect_shape"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_person_grey"
+            android:drawablePadding="10dp"
+            android:hint="Last Name"
+            android:minHeight="48dp"
+            android:textColor="@color/darker_beige"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/usrLastName"
+            android:background="@drawable/rect_shape"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/usrPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/rect_shape"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:textColor="@color/darker_beige"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:hint="Country"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/usrCountry"
+                android:minHeight="48dp"
+                android:textColor="@color/darker_beige"
+                android:drawableStart="@drawable/ic_country_grey"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/rect_shape"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:hint="City/District"
+                android:minHeight="48dp"
+                android:textColor="@color/darker_beige"
+                android:drawableStart="@drawable/ic_country_grey"
+                android:drawablePadding="5dp"
+                android:inputType="textPersonName"
+                android:layout_weight="1"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/usrDistrict"
+                android:background="@drawable/rect_shape"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:hint="Email"
+            android:minHeight="48dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/darker_beige"
+            android:id="@+id/usrEmail"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_mailgrey"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rect_shape"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:minHeight="48dp"
+            android:textColor="@color/darker_beige"
+            android:drawableStart="@drawable/ic_lockgrey"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/usrPassword"
+            android:background="@drawable/rect_shape"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:minHeight="48dp"
+            android:textColor="@color/darker_beige"
+            android:drawableStart="@drawable/ic_lockgrey"
+            android:drawablePadding="10dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/usrConfirmPW"
+            android:background="@drawable/rect_shape"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btnRegister"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>

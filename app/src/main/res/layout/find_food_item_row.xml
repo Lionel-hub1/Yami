@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/yellow_transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/upper_sub_relative">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/restaurantImageCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6sp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="15dp"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginEnd="6sp"
+                    android:layout_marginBottom="6sp">
+                    <ImageView
+                        android:id="@+id/restaurantImage"
+                        android:layout_width="80sp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="70sp"
+                        android:src="@drawable/hotelimage" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/restaurantName"
+                    android:layout_toRightOf="@id/restaurantImageCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/brown"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginLeft="6sp"
+                    android:text="Rebu restaurant"/>
+
+                <TextView
+                    android:id="@+id/restaurantDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantName"
+                    android:layout_marginStart="6sp"
+                    android:layout_marginEnd="6sp"
+                    android:layout_marginBottom="6sp"
+                    android:layout_toRightOf="@id/restaurantImageCard"
+                    android:fontFamily="@font/andada"
+                    android:text="We work near Downtown, we offer delivery services, and catering ..."
+                    android:textColor="@color/dark_grey" />
+
+                <TextView
+                    android:id="@+id/restaurantDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/restaurantDescription"
+                    android:layout_marginLeft="6sp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_toRightOf="@+id/restaurantImageCard"
+                    android:fontFamily="@font/andada"
+                    android:text="167 Km from you"
+                    android:textColor="@color/light_grey" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_toRightOf="@id/restaurantImageCard"
+                    android:layout_below="@id/restaurantDistance"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ratingsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rated 4.3,"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="6sp"
+                        android:textColor="@color/dark_red"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/reviewsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="27 Reviews"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_red"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/restaurant_card_buttons_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upper_sub_relative"
+                android:layout_marginTop="5sp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/linearLayoutRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/light_beige"
+                    android:layout_marginVertical="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayoutLocate"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:gravity="center_vertical"
+                            android:text="Rate"
+                            android:textColor="@color/light_grey" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:src="@drawable/ic_rated" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginVertical="5dp"
+                    android:id="@+id/linearLayoutLocate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/light_beige"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Locate"
+                            android:textColor="@color/light_grey" />
+
+                        <ImageButton
+                            android:id="@+id/locationIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:src="@drawable/ic_location" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginVertical="5dp"
+                    android:id="@+id/linearLayoutMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/light_beige"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayoutLocate"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:gravity="center_vertical"
+                            android:text="More Info"
+                            android:textColor="@color/light_grey" />
+
+                        <ImageButton
+                            android:id="@+id/moreInfoIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:src="@drawable/ic_plus" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

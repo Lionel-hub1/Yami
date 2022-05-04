@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yami_nav"
+    app:startDestination="@id/learnHowTo">
+
+    <fragment
+        android:id="@+id/learnHowTo"
+        android:name="lio.foody.yami.LearnHowTo"
+        android:label="fragment_learn_how_to"
+        tools:layout="@layout/fragment_learn_how_to" />
+    <fragment
+        android:id="@+id/findFood"
+        android:name="lio.foody.yami.FindFood"
+        android:label="fragment_find_food"
+        tools:layout="@layout/fragment_find_food" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="lio.foody.yami.Profile"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/home4"
+        android:name="lio.foody.yami.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/red"
+    android:id="@+id/home_action_bar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="5dp"
+        android:textSize="32sp"
+        android:text="Yami"/>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_toLeftOf="@+id/userMenus"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_chats_connect_with_people"/>
+
+    <ImageView
+        android:id="@+id/userMenus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_outline_person_pin_24"/>
+
+</RelativeLayout>

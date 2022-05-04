@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey">
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shadowColor="@color/light_beige"
+            android:hint="Enter your feedback here"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

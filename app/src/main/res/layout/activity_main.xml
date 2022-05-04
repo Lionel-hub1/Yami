@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige_transparent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/berkshire_swash"
+        android:gravity="center"
+        android:text="Welcome to"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120sp"
+        android:layout_gravity="center"
+        android:src="@drawable/yamilogo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/beige_transparent"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/userIdIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="22dp"
+                android:src="@drawable/ic_baseline_person_pin_24" />
+
+            <EditText
+                android:id="@+id/usernameInput"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/userIdIcon"
+                android:fontFamily="serif"
+                android:hint="@string/username_hint"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey" />
+
+            <ImageView
+                android:id="@+id/userPasswordIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/userIdIcon"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_baseline_lock_24" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameInput"
+                android:layout_toRightOf="@id/userPasswordIcon"
+                android:fontFamily="serif"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey" />
+
+            <LinearLayout
+                android:id="@+id/buttonsLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordInput"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:backgroundTint="@color/darker_beige"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/darker_beige"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonsLogin"
+                android:textColor="@color/dark_grey"
+                android:layout_centerHorizontal="true"
+                android:textStyle="italic"
+                android:clickable="true"
+                android:text="Forgot password?"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

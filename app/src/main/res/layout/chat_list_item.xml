@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    android:id="@+id/chatCardTemplate"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardElevation="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chat_row_icon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@color/light_beige"
+            app:cardCornerRadius="25dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10sp"
+                android:src="@drawable/happeating" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TableRow
+            android:id="@+id/chat_row_words_id"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/chat_row_icon_id"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="56dp">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/chat_row_name_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Iriho Claire"
+                        android:textColor="@color/darker_grey"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/chat_row_description_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Good morning manager!"
+                        android:textColor="@color/light_grey"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/chat_row_name_id" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="08:47 AM"
+                        android:textSize="9dp"
+                        android:textColor="@color/lesser_dark_grey"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/switch1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:cardCornerRadius="12dp"
+                        app:cardBackgroundColor="@color/desaturated_yellow"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <TextView
+                            android:id="@+id/chat_row_unread_messages"
+                            android:layout_width="24sp"
+                            android:layout_height="24sp"
+                            android:text="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/chat_row_words_id"
+            android:layout_toRightOf="@+id/chat_row_icon_id"
+            android:background="@color/light_grey"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

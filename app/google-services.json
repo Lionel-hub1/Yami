@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525113808612",
+    "firebase_url": "https://yami-a823e-default-rtdb.firebaseio.com",
+    "project_id": "yami-a823e",
+    "storage_bucket": "yami-a823e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525113808612:android:028e4424d1825f8ec0bef1",
+        "android_client_info": {
+          "package_name": "lio.foody.yami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525113808612-6rniee9g14nlbkqp79e8m2bg3tssnd1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ewCgzQviMxNzVVLh6vqP-6Rzp-vDEMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525113808612-6rniee9g14nlbkqp79e8m2bg3tssnd1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

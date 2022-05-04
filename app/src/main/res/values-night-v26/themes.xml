@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/favorite_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@color/saturated_orange</item>
+        <item name="android:text">@color/saturated_orange</item>
+        <item name="android:textColor">@color/saturated_orange</item>
+    </style>
+</resources>

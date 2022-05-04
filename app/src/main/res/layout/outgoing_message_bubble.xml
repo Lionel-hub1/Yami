@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="100dp"
+    android:minWidth="50dp"
+    android:padding="8dp"
+    android:layout_gravity="end"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/chat_bubble_right">
+
+    <TextView
+        android:id="@+id/chat_bubble_right_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:minWidth="70dp"
+        android:text="Good morning dear client!"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/chat_bubble_right_time_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_bubble_right_message"
+        android:textSize="10dp"
+        android:text="08:47 AM"
+        android:textColor="@color/lesser_dark_grey"
+        android:textStyle="bold"
+        android:layout_marginEnd="-10dp"
+        android:layout_toStartOf="@+id/chat_bubble_right_seen_text"/>
+
+    <ImageView
+        android:id="@+id/chat_bubble_right_seen_text"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_below="@+id/chat_bubble_right_message"
+        android:layout_alignEnd="@+id/chat_bubble_right_message"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/seen_icon" />
+
+
+</RelativeLayout>

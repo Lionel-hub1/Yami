@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Chats"
+        android:icon="@drawable/ic_food_chats_people"
+        android:id="@+id/chats_page_connect"/>
+    <item
+        android:title="Posts"
+        android:icon="@drawable/ic_food_words_posts"
+        android:id="@+id/posts_page_connect"/>
+    <item
+        android:title="Saved"
+        android:icon="@drawable/ic_food_saved_ones"
+        android:id="@+id/saved_page_connect"/>
+</menu>

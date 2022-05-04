@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageToZoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mezefreshimage"/>
+</LinearLayout>

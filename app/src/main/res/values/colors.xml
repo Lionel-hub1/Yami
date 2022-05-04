@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="darker_grey">#1C1D1E</color>
+    <color name="dark_grey">#3C3F41</color>
+    <color name="less_dark_grey">#525455</color>
+    <color name="transparent_grey">#B0818283</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#EDF331</color>
+
+    <color name="beige">#F6EC8F</color>
+    <color name="light_beige">#F6F3D8</color>
+    <color name="comfy_green">#4CAF50</color>
+    <color name="red">#C43338</color>
+    <color name="brown">#A52A2A</color>
+    <color name="pink">#E91E63</color>
+    <color name="amber_900">#FF6F00</color>
+
+    <color name="dark_beige">#635C20</color>
+    <color name="dark_comfy_green">#357A38</color>
+    <color name="light_comfy_green">#78A17A</color>
+    <color name="dark_red">#9A362E</color>
+    <color name="darker_beige">#474215</color>
+    <color name="favorite_beige">#776E1F</color>
+    <color name="dark_brown">#4A0404</color>
+    <color name="dark_pink">#971641</color>
+
+    <color name="beige_transparent">#DDF1EBAD</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="yellow_transparent">#AEECDF6C</color>
+    <color name="favorite">#F0A38E6F</color>
+    <color name="favorite_dark">#F05E5241</color>
+    <color name="light_grey">#8D8D8E</color>
+    <color name="lesser_dark_grey">#AFAFAF</color>
+
+
+    <!--app's usage colors-->
+    <color name="orange">#ff8c00</color>
+    <color name="darker_orange">#e4740e</color>
+    <color name="saturated_orange">#ff9225</color>
+    <color name="desaturated_orange">#e1944e</color>
+    <color name="yellow_original">#f5bd1f</color>
+    <color name="lighter_yellow">#f8d061</color>
+    <color name="darker_yellow">#d39f09</color>
+    <color name="web_safe_yellow">#ffff00</color>
+    <color name="desaturated_yellow">#e0b334</color>
+</resources>

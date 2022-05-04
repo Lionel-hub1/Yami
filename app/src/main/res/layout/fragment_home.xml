@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B7FFFFFF"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/startContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/distanceSelectionSection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="@color/white"
+                            android:layout_marginTop="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="7dp">
+
+                            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="7dp">
+
+                                <TableRow android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/autour_one"
+                                        android:textColor="@color/light_grey"
+                                        android:text="Select distance:  "
+                                        android:textSize="11dp" />
+
+                                    <Spinner
+                                        android:id="@+id/distanceSelectSpinner"
+                                        android:layout_width="wrap_content"
+                                        android:outlineAmbientShadowColor="@color/less_dark_grey"
+                                        android:outlineSpotShadowColor="@color/less_dark_grey"
+                                        android:layout_height="wrap_content" />
+                                </TableRow>
+                            </TableLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/distanceSelectionSection"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/autour_one"
+                            android:text="...Near you in: "
+                            android:textColor="@color/darker_beige"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fragDistanceTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/distanceSelectionSection"
+                            android:layout_marginTop="20dp"
+                            android:layout_toRightOf="@+id/textView"
+                            android:fontFamily="@font/autour_one"
+                            android:text="1 Km"
+                            android:textColor="@color/darker_beige"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardRestaurantAvailable"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_marginEnd="-30dp"
+                        android:layout_marginBottom="-30dp"
+                        app:cardBackgroundColor="@color/beige"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+                        app:layout_constraintEnd_toStartOf="@+id/cardView4">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="2"
+                                android:textColor="@color/red"
+                                android:textSize="70sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:id="@+id/divider1"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="?android:attr/listDivider" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/desaturated_orange"
+                                android:gravity="center"
+                                android:padding="7dp"
+                                android:text="Restaurants"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardCafeteriasAvailable"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="-30dp"
+                        android:layout_marginBottom="-30dp"
+                        app:cardBackgroundColor="@color/beige"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+                        app:layout_constraintStart_toEndOf="@+id/cardView4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="5"
+                                android:textColor="@color/red"
+                                android:textSize="70sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:id="@+id/divider2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="?android:attr/listDivider" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/desaturated_orange"
+                                android:gravity="center"
+                                android:padding="7dp"
+                                android:text="Cafeterias"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="120dp"
+                        app:cardBackgroundColor="@color/transparent"
+                        app:cardElevation="-7dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/startContent">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="124dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/locatefoodnowimage" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardHotelsAvailable"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="-30dp"
+                        android:layout_marginEnd="-30dp"
+                        app:cardBackgroundColor="@color/beige"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintEnd_toStartOf="@+id/cardView4"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="@color/red"
+                                android:textSize="70sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:id="@+id/divider3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="?android:attr/listDivider" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/desaturated_orange"
+                                android:gravity="center"
+                                android:padding="7dp"
+                                android:text="Hotels"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardDeliveryServicesAvailable"
+                        android:layout_width="103dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="-30dp"
+                        android:layout_marginTop="-30dp"
+                        app:cardBackgroundColor="@color/beige"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintStart_toEndOf="@+id/cardView4"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="1"
+                                android:textColor="@color/red"
+                                android:textSize="70sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:id="@+id/divider4"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="?android:attr/listDivider" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/desaturated_orange"
+                                android:gravity="center"
+                                android:padding="7dp"
+                                android:text="D-services"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

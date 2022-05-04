@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--Galatians 5:16-26 -->
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:layout_marginVertical="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/setting_icon_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_outline_wb_sunny_24"
+                android:padding="10sp"/>
+
+            <TableRow
+                android:id="@+id/setting_words_id"
+                android:layout_toRightOf="@+id/setting_icon_id"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/setting_name_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darker_grey"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Display"/>
+
+                    <TextView
+                        android:id="@+id/setting_description_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/light_grey"
+                        android:fontFamily="sans-serif"
+                        android:text="themes, backgrounds, font size"/>
+
+                </LinearLayout>
+
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/setting_words_id"
+                android:layout_toRightOf="@+id/setting_icon_id"
+                android:background="@color/light_grey"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/setting2_icon_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10sp"
+                android:src="@drawable/ic_baseline_notifications_active_24" />
+
+            <TableRow
+                android:id="@+id/setting2_words_id"
+                android:layout_toRightOf="@+id/setting2_icon_id"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/setting2_name_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darker_grey"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Sound"/>
+
+                    <TextView
+                        android:id="@+id/setting2_description_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/light_grey"
+                        android:fontFamily="sans-serif"
+                        android:text="notification tone, vibration"/>
+
+                </LinearLayout>
+
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/setting2_words_id"
+                android:layout_toRightOf="@+id/setting2_icon_id"
+                android:background="@color/light_grey"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/setting3_icon_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10sp"
+                android:src="@drawable/ic_media_manage_icon" />
+
+            <TableRow
+                android:id="@+id/setting3_words_id"
+                android:layout_toRightOf="@+id/setting3_icon_id"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/setting3_name_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darker_grey"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Manage Media"/>
+
+                    <TextView
+                        android:id="@+id/setting3_description_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/light_grey"
+                        android:fontFamily="sans-serif"
+                        android:text="Choose storage, Visibility, Gallery"/>
+
+                </LinearLayout>
+
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/setting3_words_id"
+                android:layout_toRightOf="@+id/setting3_icon_id"
+                android:background="@color/light_grey"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chats &amp; Posts"
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:layout_marginVertical="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/setting4_icon_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10sp"
+                android:src="@drawable/ic_media_manage_icon" />
+
+            <TableRow
+                android:id="@+id/setting4_words_id"
+                android:layout_toRightOf="@+id/setting4_icon_id"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/setting4_name_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Save on Phone memory"
+                            android:textColor="@color/darker_grey"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/setting4_description_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="Activate/Deactivate"
+                            android:textColor="@color/light_grey"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/setting4_name_id" />
+
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                </LinearLayout>
+
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/setting4_words_id"
+                android:layout_toRightOf="@+id/setting4_icon_id"
+                android:background="@color/light_grey"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Online Sync"
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:layout_marginVertical="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/setting5_icon_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_cloud_upload_24"
+                android:padding="10sp"/>
+
+            <TableRow
+                android:id="@+id/setting5_words_id"
+                android:layout_toRightOf="@+id/setting5_icon_id"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/setting5_name_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darker_grey"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Online Backup"/>
+
+                    <TextView
+                        android:id="@+id/setting5_description_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/light_grey"
+                        android:fontFamily="sans-serif"
+                        android:text="Account Name"/>
+
+                </LinearLayout>
+
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/setting5_words_id"
+                android:layout_toRightOf="@+id/setting5_icon_id"
+                android:background="@color/light_grey"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/setting6_icon_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_sync_24"
+                android:padding="10sp"/>
+
+            <TableRow
+                android:id="@+id/setting6_words_id"
+                android:layout_toRightOf="@+id/setting6_icon_id"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/setting6_name_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Sync on launch"
+                            android:textColor="@color/darker_grey"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_marginRight="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/setting6_words_id"
+                android:layout_toRightOf="@+id/setting6_icon_id"
+                android:background="@color/light_grey"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
