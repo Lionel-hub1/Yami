@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="40sp"
     android:layout_centerHorizontal="true"
     android:gravity="center">
     <TextView
@@ -10,14 +10,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="20"
-        android:textSize="11dp"
+        android:textSize="16dp"
         android:textColor="@color/less_dark_grey"
         android:textStyle="bold"
         android:fontFamily="@font/autour_one"
         android:layout_marginRight="4dp"/>
     <TextView
         android:id="@+id/unitMeasure"
-        android:textSize="11dp"
+        android:textSize="16dp"
         android:textStyle="bold"
         android:fontFamily="@font/autour_one"
         android:textColor="@color/less_dark_grey"

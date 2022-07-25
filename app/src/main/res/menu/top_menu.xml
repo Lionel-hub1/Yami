@@ -18,9 +18,13 @@
 
         <menu>
 
-            <item
-                android:title="Log Out"
-                android:id="@+id/logoutMenu"/>
+            <item android:id="@+id/mnuLogin"
+                android:title="Login"
+                />
+            <item android:id="@+id/mnuLogout"
+                android:visible="false"
+                android:title="Logout"
+                />
 
         </menu>
 

@@ -27,7 +27,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="300sp"
-        android:layout_height="320sp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         app:cardBackgroundColor="@color/beige_transparent"
@@ -94,42 +94,42 @@
 
                 <Button
                     android:id="@+id/btnLogin"
-                    android:text="@string/login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/linear_layout_1"
                     android:layout_marginHorizontal="15sp"
-                    android:background="@drawable/buttons"
-                    android:textAllCaps="false"
-                    android:textSize="15sp"
                     android:layout_marginVertical="4sp"
-                    android:textColor="@android:color/white"  />
+                    android:background="@drawable/buttons"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
 
                 <Button
                     android:id="@+id/btnRegister"
-                    android:text="@string/register"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/linear_layout_1"
                     android:layout_marginHorizontal="15sp"
-                    android:background="@drawable/buttons"
-                    android:textAllCaps="false"
-                    android:textSize="15sp"
                     android:layout_marginVertical="4sp"
-                    android:textColor="@android:color/white"  />
+                    android:background="@drawable/buttons"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
                 <Button
                     android:id="@+id/login_as_admin_btn"
-                    android:text="@string/login_as_admin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/linear_layout_1"
                     android:layout_marginHorizontal="15sp"
-                    android:background="@drawable/buttons"
-                    android:textAllCaps="false"
-                    android:textSize="15sp"
                     android:layout_marginVertical="4sp"
+                    android:background="@drawable/buttons"
+                    android:text="@string/login_as_admin"
+                    android:textAllCaps="false"
                     android:textColor="@android:color/white"
-                    />
+                    android:textSize="15sp" />
 
 
             </LinearLayout>
@@ -139,6 +139,7 @@
                 android:layout_below="@+id/buttonsLogin"
                 android:textColor="@color/dark_grey"
                 android:layout_centerHorizontal="true"
+                android:layout_marginVertical="10sp"
                 android:textStyle="italic"
                 android:clickable="true"
                 android:text="Forgot password?"/>
