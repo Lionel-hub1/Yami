@@ -22,7 +22,6 @@ public class HomePage extends AppCompatActivity {
            Fragment fragmentContainerView = null;
 
            switch (item.getItemId()){
-
                case R.id.home4:
                    fragmentContainerView =  new Home();
                    break;
@@ -36,9 +35,7 @@ public class HomePage extends AppCompatActivity {
                    fragmentContainerView =  new Profile();
                    break;
            }
-
            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, fragmentContainerView).commit();
-
            return true;
         }
     };

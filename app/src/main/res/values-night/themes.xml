@@ -3,7 +3,7 @@
     <style name="Theme.Yami" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/light_beige</item>
-        <item name="colorPrimaryVariant">@color/desaturated_orange</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
         <item name="colorOnPrimary">@color/dark_grey</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/yellow_original</item>

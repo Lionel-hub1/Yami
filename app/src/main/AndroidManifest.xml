@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="lio.foody.yami">
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,19 +14,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Yami">
         <activity
+            android:name=".AdminSessionActivity"
+            android:exported="false" />
+        <activity
             android:name=".PersonalChat"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Register"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".ConnectFoodActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".HomePage"
             android:exported="false" />

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/buttons.xml" value="0.1465" />
         <entry key="app/src/main/res/drawable/chat_bubble.xml" value="0.1565" />
         <entry key="app/src/main/res/drawable/chat_bubble_left.xml" value="0.1565" />
         <entry key="app/src/main/res/drawable/chat_bubble_right.xml" value="0.12" />

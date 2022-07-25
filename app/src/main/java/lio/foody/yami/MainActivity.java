@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnLogin, btnRegister;
+    Button btnLogin, btnRegister, login_as_admin_btn;
     Coms coms;
     TextView usernameInput;
     EditText emailEt, passwordEt;
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         btnLogin    = findViewById(R.id.btnLogin);
         btnRegister = findViewById(R.id.btnRegister);
+        login_as_admin_btn = findViewById(R.id.login_as_admin_btn);
         usernameInput=findViewById(R.id.usernameInput);
         progressDialog=new ProgressDialog(this);
         progressDialog.setTitle("Logging in ...");
@@ -88,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
                         });
             }
         });
-
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -96,5 +96,13 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+        login_as_admin_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Register.class));
+                finish();
+            }
+        });
+
     }
 }
