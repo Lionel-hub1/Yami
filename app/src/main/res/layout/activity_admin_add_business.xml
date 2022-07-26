@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddBusinessActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/select_business_image_card"
+        android:layout_width="160sp"
+        android:layout_height="160sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="80dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/background">
+        <ImageView
+            android:id="@+id/select_business_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cropToPadding="false"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iccon_photo_110" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/business_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_business_image_card"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:hint="Business Name..."
+        android:layout_marginHorizontal="45dp"
+        android:padding="12dp"
+        android:background="@drawable/input_design"
+        />
+
+
+    <EditText
+        android:id="@+id/business_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/business_name"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="6dp"
+        android:hint="Business Description..."
+        android:layout_marginHorizontal="45dp"
+        android:padding="12dp"
+        android:background="@drawable/input_design"
+        />
+
+
+    <EditText
+        android:id="@+id/business_chef_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/business_description"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="6dp"
+        android:hint="Chef Name"
+        android:layout_marginHorizontal="45dp"
+        android:padding="12dp"
+        android:background="@drawable/input_design"
+        />
+
+
+    <Button
+        android:id="@+id/add_new_business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/business_chef_name"
+        android:text="Register Business"
+        android:layout_marginHorizontal="45dp"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        />
+
+</RelativeLayout>

@@ -31,10 +31,15 @@
         <entry key="app/src/main/res/drawable/ic_plus.xml" value="0.153" />
         <entry key="app/src/main/res/drawable/ic_posts.xml" value="0.153" />
         <entry key="app/src/main/res/drawable/ic_twotone_edit_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/icon_video_50.xml" value="0.204" />
+        <entry key="app/src/main/res/drawable/input_design.xml" value="0.204" />
         <entry key="app/src/main/res/drawable/rect_shape.xml" value="0.1515" />
+        <entry key="app/src/main/res/drawable/rectangle_background.xml" value="0.162" />
         <entry key="app/src/main/res/drawable/square_chat_top_background.xml" value="0.1565" />
         <entry key="app/src/main/res/drawable/square_home_back_elements.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/square_home_identifier.xml" value="0.1585" />
+        <entry key="app/src/main/res/layout/activity_admin_add_business.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/activity_admin_session.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_connect_food.xml" value="0.16296296296296298" />
         <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.19635416666666666" />
@@ -63,7 +68,7 @@
         <entry key="app/src/main/res/layout/post_list_item.xml" value="0.33" />
         <entry key="app/src/main/res/layout/rating_dialog_body.xml" value="0.33" />
         <entry key="app/src/main/res/layout/recipe_item_design.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/replacement.xml" value="0.1953125" />
+        <entry key="app/src/main/res/layout/replacement.xml" value="0.5" />
         <entry key="app/src/main/res/layout/setting_item_row.xml" value="0.33" />
         <entry key="app/src/main/res/layout/single_chat_design.xml" value="0.25" />
         <entry key="app/src/main/res/layout/single_post_design.xml" value="0.33" />

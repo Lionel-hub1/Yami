@@ -56,8 +56,6 @@ public class LoginPageActivity extends AppCompatActivity {
         firebaseUser=mAuth.getCurrentUser();
         profileDatabase = FirebaseDatabase.getInstance();
         profileReference = profileDatabase.getReference(USER);
-        storageProfileRef = FirebaseStorage.getInstance().getReference("InfoUsers");
-
 
         btnLogin = findViewById(R.id.btnLogin);
         btnRegister = findViewById(R.id.btnRegister);
@@ -108,34 +106,8 @@ public class LoginPageActivity extends AppCompatActivity {
     }
 
     private void loginAsAdminCheck() {
-        String email = emailEt.getText().toString();
-        String pass = passwordEt.getText().toString();
-        profileReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@androidx.annotation.NonNull DataSnapshot snapshot) {
-                for (DataSnapshot ds: snapshot.getChildren()){
-                    if (ds.child("usrEmail").getValue().equals(firebaseUser.getEmail())){
-                        Toast.makeText(LoginPageActivity.this, "Your Admin Account is pending", Toast.LENGTH_SHORT).show();
-                    }
-                    if (ds.child("account_Status").getValue().equals("user")){
-                        Toast.makeText(LoginPageActivity.this, "Your are a normal user", Toast.LENGTH_SHORT).show();
-                    }
-                    if (ds.child("account_Status").getValue().equals("approved")){
-                        Toast.makeText(LoginPageActivity.this, "Your Admin Account is approved", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(@androidx.annotation.NonNull DatabaseError error) {
-
-            }
-        });
-
-
-        //These mean to move to the Admin Session
-        /*startActivity(new Intent(getApplicationContext(), AdminSessionActivity.class));
-        finish();*/
+        startActivity(new Intent(getApplicationContext(), AdminSessionActivity.class));
+        finish();
     }
 
     private void loginCheck() {
