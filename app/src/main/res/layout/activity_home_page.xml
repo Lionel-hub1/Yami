@@ -1,36 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--If Jesus comes back Now, are you entering heaven? or you need to change something now-->
+<!--There's a greatest victory in the below Verses, for everything that bothers you-->
 <!--Galatians 5:16-26 -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_beige"
-    android:orientation="vertical"
-    tools:context=".HomePage">
-
-    <FrameLayout
-        android:id="@+id/fragmentContainerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/yami_nav" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/favorite"
-        android:id="@+id/bottomNavigationView"
-        app:itemIconSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu"/>
-
-
+    tools:context=".MainActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

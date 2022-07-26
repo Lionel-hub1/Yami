@@ -14,12 +14,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import lio.foody.yami.databinding.ActivityConnectFoodBinding;
-import lio.foody.yami.databinding.ActivityMainBinding;
 
 public class ConnectFoodActivity extends AppCompatActivity {
 
     ActivityConnectFoodBinding binding;
+    FirebaseAuth mAuth;
     Button chatBtn;
 
     @Override
@@ -28,6 +30,7 @@ public class ConnectFoodActivity extends AppCompatActivity {
         binding = ActivityConnectFoodBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new ChatsFragment());
+        mAuth = FirebaseAuth.getInstance();
         binding.bottomNavigationViewConnect.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.chats_page_connect:
@@ -67,6 +70,7 @@ public class ConnectFoodActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), HomePage.class));
                 break;
             case R.id.logoutMenu:
+                mAuth.signOut();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 break;
         }

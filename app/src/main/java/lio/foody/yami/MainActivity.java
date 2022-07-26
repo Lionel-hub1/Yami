@@ -23,24 +23,6 @@ public class MainActivity extends AppCompatActivity {
     Context context;
     BottomNavigationView bottomNavigationView;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
-        mAuth = FirebaseAuth.getInstance();
-        fbUser = mAuth.getCurrentUser();
-
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
-        bottomNavigationView.setOnItemSelectedListener(navListener);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new Home()).commit();
-
-//        Intent myIntent =getIntent();
-//        Toast.makeText(getApplicationContext(), "Welcome "+myIntent.getStringExtra("keyname"), Toast.LENGTH_LONG).show();
-
-    }
-
-
     NavigationBarView.OnItemSelectedListener navListener = new NavigationBarView.OnItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -97,6 +79,23 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
     };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mAuth = FirebaseAuth.getInstance();
+        fbUser = mAuth.getCurrentUser();
+
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+        bottomNavigationView.setOnItemSelectedListener(navListener);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new Home()).commit();
+
+//        Intent myIntent =getIntent();
+//        Toast.makeText(getApplicationContext(), "Welcome "+myIntent.getStringExtra("keyname"), Toast.LENGTH_LONG).show();
+
+    }
 
 
 

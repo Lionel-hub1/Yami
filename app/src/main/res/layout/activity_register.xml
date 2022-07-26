@@ -55,6 +55,7 @@
             android:inputType="textPersonName"
             android:background="@drawable/rect_shape"
             android:layout_height="wrap_content"/>
+
         <EditText
             android:layout_width="match_parent"
             android:padding="10dp"
@@ -67,6 +68,14 @@
             android:layout_marginBottom="7dp"
             android:id="@+id/usrLastName"
             android:background="@drawable/rect_shape"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Account Status"
+            android:inputType="text"
+            android:visibility="gone"
+            android:id="@+id/account_Status"
             android:layout_height="wrap_content"/>
 
         <EditText

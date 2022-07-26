@@ -36,11 +36,12 @@
         <entry key="app/src/main/res/drawable/square_home_back_elements.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/square_home_identifier.xml" value="0.1585" />
         <entry key="app/src/main/res/layout/activity_connect_food.xml" value="0.16296296296296298" />
-        <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.38578680203045684" />
+        <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4523809523809524" />
         <entry key="app/src/main/res/layout/activity_personal_chat.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.39542143600416235" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.21" />
         <entry key="app/src/main/res/layout/chat_list_item.xml" value="0.5716332378223495" />
         <entry key="app/src/main/res/layout/distance_text.xml" value="0.5" />
         <entry key="app/src/main/res/layout/find_food_item_row.xml" value="0.496551724137931" />

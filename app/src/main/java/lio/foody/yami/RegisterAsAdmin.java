@@ -1,12 +1,5 @@
 package lio.foody.yami;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.ContentValues;
@@ -25,6 +18,13 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -36,9 +36,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-import java.util.Objects;
-
-public class Register extends AppCompatActivity {
+public class RegisterAsAdmin extends AppCompatActivity {
     ImageButton btnClose;
     ImageView usrImage;
     Uri imageUri;
@@ -48,7 +46,7 @@ public class Register extends AppCompatActivity {
     StorageReference stRef;
     DatabaseReference dbRef;
 
-    EditText usrFirstName,usrLastName,account_Status, usrPhone,usrCountry,
+    EditText usrFirstName,usrLastName,account_Status,usrPhone,usrCountry,
             usrDistrict,usrEmail,usrPassword,usrConfirmPW;
     Button btnRegister;
 
@@ -68,9 +66,10 @@ public class Register extends AppCompatActivity {
 
         btnClose=findViewById(R.id.btnClose);
         usrFirstName=findViewById(R.id.usrFirstName);
+        usrFirstName.setHint("Admin's First Name");
         usrLastName=findViewById(R.id.usrLastName);
         account_Status=findViewById(R.id.account_Status);
-        account_Status.setText("user");
+        account_Status.setText("pending");
         usrPhone=findViewById(R.id.usrPhone);
         usrCountry=findViewById(R.id.usrCountry);
         usrDistrict=findViewById(R.id.usrDistrict);
@@ -89,7 +88,7 @@ public class Register extends AppCompatActivity {
         btnClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Register.this,MainActivity.class));
+                startActivity(new Intent(RegisterAsAdmin.this,MainActivity.class));
                 finish();
             }
         });
@@ -97,10 +96,10 @@ public class Register extends AppCompatActivity {
         usrImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent();
-//                intent.setType("image/*");
-//                intent.setAction(Intent.ACTION_GET_CONTENT);
-//                startActivityForResult(intent,GALLERY_REQUEST_CODE);
+                /*Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(intent,GALLERY_REQUEST_CODE);*/
                 showChooser();
             }
         });
@@ -214,7 +213,7 @@ public class Register extends AppCompatActivity {
     }
 
     private void createUserAccount() {
-        progressDialog.setTitle("Creating user account");
+        progressDialog.setTitle("Creating Admin account");
         progressDialog.show();
         auth=FirebaseAuth.getInstance();
         auth.createUserWithEmailAndPassword(usrEmail.getText().toString(),
@@ -238,7 +237,7 @@ public class Register extends AppCompatActivity {
     }
 
     private void saveToDatabase() {
-        progressDialog.setTitle("Saving user info");
+        progressDialog.setTitle("Saving user infos");
         progressDialog.show();
         String fileName ="profileImage/"+auth.getUid();
         stRef= FirebaseStorage.getInstance().getReference(fileName);
@@ -277,13 +276,13 @@ public class Register extends AppCompatActivity {
                 usrCountry.getText().toString(),
                 usrDistrict.getText().toString(),
                 usrEmail.getText().toString());
-        dbRef.child(Objects.requireNonNull(auth.getUid())).setValue(user)
+        dbRef.child(auth.getUid()).setValue(user)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
                         progressDialog.dismiss();
-                        startActivity(new Intent(Register.this, MainActivity.class));
-                        Toast.makeText(Register.this, "All saved successfully", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(RegisterAsAdmin.this, MainActivity.class));
+                        Toast.makeText(RegisterAsAdmin.this, "All saved successfully", Toast.LENGTH_LONG).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

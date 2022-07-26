@@ -15,6 +15,10 @@
         android:theme="@style/Theme.Yami">
         <activity
             android:name=".LoginPageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".RegisterAsAdmin"
             android:exported="false" />
         <activity
             android:name=".AdminSessionActivity"

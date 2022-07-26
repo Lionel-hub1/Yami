@@ -23,7 +23,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationViewConnect"
         android:layout_width="match_parent"
-        android:background="@color/favorite"
+        android:background="@color/background"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"

@@ -4,6 +4,7 @@ public class User {
     String  usrImage;
     String usrFirstName;
     String usrLastName;
+    String account_Status;
     String usrPhone;
     String usrCountry;
     String usrDistrict;
@@ -14,14 +15,11 @@ public class User {
     public User() {
     }
 
-    public String getUsrImage() {
-        return usrImage;
-    }
-
-    public User(String usrImage, String usrFirstName, String usrLastName, String usrPhone, String usrCountry, String usrDistrict, String usrEmail, String usrPassword, String usrCPassword) {
+    public User(String usrImage, String usrFirstName, String usrLastName, String account_Status, String usrPhone, String usrCountry, String usrDistrict, String usrEmail, String usrPassword, String usrCPassword) {
         this.usrImage = usrImage;
         this.usrFirstName = usrFirstName;
         this.usrLastName = usrLastName;
+        this.account_Status = account_Status;
         this.usrPhone = usrPhone;
         this.usrCountry = usrCountry;
         this.usrDistrict = usrDistrict;
@@ -30,22 +28,19 @@ public class User {
         this.usrCPassword = usrCPassword;
     }
 
-    public User(String usrImage, String usrFirstName, String usrLastName, String usrPhone, String usrCountry, String usrDistrict, String usrEmail) {
+    public User(String usrImage, String usrFirstName, String usrLastName, String account_Status, String usrPhone, String usrCountry, String usrDistrict, String usrEmail) {
         this.usrImage = usrImage;
         this.usrFirstName = usrFirstName;
         this.usrLastName = usrLastName;
+        this.account_Status = account_Status;
         this.usrPhone = "+"+usrPhone;
         this.usrCountry = usrCountry;
         this.usrDistrict = usrDistrict;
         this.usrEmail = usrEmail;
     }
 
-    public String getUsrDistrict() {
-        return usrDistrict;
-    }
-
-    public void setUsrDistrict(String usrDistrict) {
-        this.usrDistrict = usrDistrict;
+    public String getUsrImage() {
+        return usrImage;
     }
 
     public void setUsrImage(String usrImage) {
@@ -68,12 +63,20 @@ public class User {
         this.usrLastName = usrLastName;
     }
 
+    public String getAccount_Status() {
+        return account_Status;
+    }
+
+    public void setAccount_Status(String account_Status) {
+        this.account_Status = account_Status;
+    }
+
     public String getUsrPhone() {
         return usrPhone;
     }
 
     public void setUsrPhone(String usrPhone) {
-        this.usrPhone = "+"+usrPhone;
+        this.usrPhone = usrPhone;
     }
 
     public String getUsrCountry() {
@@ -82,6 +85,14 @@ public class User {
 
     public void setUsrCountry(String usrCountry) {
         this.usrCountry = usrCountry;
+    }
+
+    public String getUsrDistrict() {
+        return usrDistrict;
+    }
+
+    public void setUsrDistrict(String usrDistrict) {
+        this.usrDistrict = usrDistrict;
     }
 
     public String getUsrEmail() {
