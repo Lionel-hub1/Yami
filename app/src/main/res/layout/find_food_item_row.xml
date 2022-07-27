@@ -41,15 +41,15 @@
 
                 <TextView
                     android:id="@+id/restaurantName"
-                    android:layout_toRightOf="@id/restaurantImageCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:fontFamily="sans-serif-black"
-                    android:textColor="@color/brown"
-                    android:layout_marginTop="6sp"
                     android:layout_marginLeft="6sp"
-                    android:text="Rebu restaurant"/>
+                    android:layout_marginTop="6sp"
+                    android:layout_toRightOf="@id/restaurantImageCard"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Rebu restaurant"
+                    android:textColor="@color/brown"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/restaurantDescription"

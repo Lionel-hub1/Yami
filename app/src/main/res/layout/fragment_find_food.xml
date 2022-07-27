@@ -13,16 +13,49 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <SearchView
+
+        <RelativeLayout
+            android:id="@+id/r5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:queryHint="Type here to search"
-            android:background="@color/dark_grey"
-            android:backgroundTint="@color/dark_grey"
-            android:searchIcon="@drawable/ic_search"/>
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/search_product_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_background"
+                android:hint="Search By Name"
+                android:padding="9dp"
+                android:textColorHint="#52BD6245"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                />
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:text="Search"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5sp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons"
+                android:padding="9dp"
+                android:layout_toRightOf="@+id/search_product_name"
+                />
+
+        </RelativeLayout>
+
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/find_food_recycler_id"
+            android:id="@+id/search_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
